@@ -10,13 +10,13 @@ import java.util.*
 @ConfigurationPropertiesScan
 @SpringBootApplication
 class ExWebmvcApplication {
-	 @PostConstruct
+    @PostConstruct
     fun onConstruct() {
         TimeZone.setDefault(TimeZone.getTimeZone(ZoneId.of("UTC")))
     }
 }
 
 fun main(args: Array<String>) {
-	TimeZone.setDefault(TimeZone.getTimeZone(ZoneId.of("UTC")))
-	runApplication<ExWebmvcApplication>(*args)
+    TimeZone.setDefault(TimeZone.getTimeZone(ZoneId.of("UTC")))
+    runApplication<ExWebmvcApplication>(*args)
 }
