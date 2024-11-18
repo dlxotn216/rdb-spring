@@ -2,3 +2,10 @@ spring:
   profiles:
     group:
       local: rdb-local
+
+app:
+  error:
+    public: false
+
+  query:
+    mode: querydsl
